@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-05",
+  "replaced_column": "solubility_parameter",
+  "from_table": "00_cohort_lock/input/solubility_parameter_503.csv",
+  "table_column": "solubility_parameter_1200K",
+  "table_sha256": "13de87496f4779540025ec5f0e6d11963446aa26b0409ac06169add51b49f044",
+  "locked_493_xlsx_sha256": "f93b9de438b1b5e06ad3a7bdaf0708596efb0b04a2df7702dbee9b592f24f662",
+  "rows_replaced": 493,
+  "other_cells": "unchanged"
+}

@@ -1,0 +1,62 @@
+EFA vs non-DFT chemical descriptors: calculation report
+==============================================================================
+
+1. Purpose
+   This analysis quantifies how non-DFT chemistry descriptors relate to the
+   entropy-forming ability (EFA).
+
+2. Input data
+   Input workbook: analysis/05_fig6d_chemistry/input/locked_493.xlsx
+   Sheet: combined
+   Rows used after dropping missing EFA: 493
+   Non-DFT chemistry descriptor range: Excel columns S:AK
+   Number of chemistry descriptors analyzed: 19
+
+3. Target
+   EFA: entropy-forming ability, plotted as EFA
+
+4. Heatmap focus descriptors
+   VEC -> VEC
+   delta_electronegativity_Ghosh -> $\delta\chi_{\mathrm{Ghosh}}$
+   delta_radii_Ghosh08 -> $\delta r_{\mathrm{Ghosh}}$
+   delta_radius_PT -> $\delta r_{\mathrm{PT}}$
+   param_geo_radii_Ghosh08 -> $\Lambda_{\mathrm{Ghosh}}$
+   param_geo_radius_PT -> $\Lambda_{\mathrm{PT}}$
+
+5. Calculation procedure
+   a) Read the input workbook and select non-DFT chemistry descriptors from S:AK.
+   b) Convert EFA and descriptor columns to numeric values.
+   c) For every target–descriptor pair, calculate Pearson and Spearman correlations.
+   d) For each target and method, apply Benjamini-Hochberg FDR correction across all S:AK descriptors.
+   e) Rank descriptors by absolute correlation coefficient for each target and method.
+   f) Store all long-form results, heatmap matrices, FDR matrices, and plot-data columns in Excel.
+
+6. Main Spearman heatmap matrix
+descriptor_label       VEC  $\delta\chi_{\mathrm{Ghosh}}$  $\delta r_{\mathrm{Ghosh}}$  $\delta r_{\mathrm{PT}}$  $\Lambda_{\mathrm{Ghosh}}$  $\Lambda_{\mathrm{PT}}$
+target_label                                                                                                                                                         
+EFA               0.399703                       -0.23945                    -0.334691                 -0.278536                    0.334691                 0.278536
+
+7. Pearson heatmap matrix
+descriptor_label       VEC  $\delta\chi_{\mathrm{Ghosh}}$  $\delta r_{\mathrm{Ghosh}}$  $\delta r_{\mathrm{PT}}$  $\Lambda_{\mathrm{Ghosh}}$  $\Lambda_{\mathrm{PT}}$
+target_label                                                                                                                                                         
+EFA               0.353514                      -0.215392                    -0.355822                 -0.318865                    0.350368                 0.240079
+
+8. Top descriptors by absolute Spearman correlation
+   Target: EFA
+      rank  1: VEC rho=0.400, p_FDR=4.670e-19
+      rank  2: $\delta r_{\mathrm{Ghosh}}$ rho=-0.335, p_FDR=1.444e-13
+      rank  2: $\Lambda_{\mathrm{Ghosh}}$ rho=0.335, p_FDR=1.444e-13
+      rank  4: $\delta r_{\mathrm{PT}}$ rho=-0.279, p_FDR=1.177e-09
+      rank  4: $\Lambda_{\mathrm{PT}}$ rho=0.279, p_FDR=1.177e-09
+      rank  6: $\delta\chi_{\mathrm{Ghosh}}$ rho=-0.239, p_FDR=2.337e-07
+      rank  7: $\delta r_{\mathrm{cov}}$ rho=0.158, p_FDR=1.000e-03
+      rank  7: $\Lambda_{\mathrm{cov}}$ rho=-0.158, p_FDR=1.000e-03
+
+9. Interpretation
+   Positive correlations with EFA indicate chemistry descriptors that increase with entropy-forming ability.
+   The heatmap focuses on chemically interpretable descriptors: VEC, Ghosh electronegativity mismatch,
+   Ghosh and Pauling/periodic-table radius mismatch, and the corresponding Λ parameters.
+
+10. Output files
+   Excel workbook: analysis/05_fig6d_chemistry/output/efa_chemical_descriptor_correlations.xlsx
+   TXT report:     analysis/05_fig6d_chemistry/output/efa_chemical_descriptor_correlation_report.txt

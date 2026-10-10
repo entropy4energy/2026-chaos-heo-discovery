@@ -1,0 +1,37 @@
+{
+  "command": [
+    "python3",
+    "analysis/00_runbook/legacy_gkf.py",
+    "analysis/08_fig7c_enrichment/code/panel_c_highEFA_enrichment_lift.py",
+    "--input",
+    "analysis/08_fig7c_enrichment/input/locked_493.xlsx",
+    "--outdir",
+    "analysis/08_fig7c_enrichment/output"
+  ],
+  "returncode": 0,
+  "input_sha256": "05e4157985bd8b7c8ce58ed38a32f99842c6544e04a909c184a2ccba59686e22",
+  "script_snapshots": [
+    {
+      "snapshot": "08_fig7c_enrichment/code/panel_c_highEFA_enrichment_lift.py",
+      "sha256": "aa4fe6a73102541af6667db8df73686d99d114d4bfc0ea29bcc32a68b7ca9db0"
+    },
+    {
+      "snapshot": "08_fig7c_enrichment/code/efa_screening_common.py",
+      "sha256": "ebdd68d0421d379acdc5239bb175ae8c006745ffda10b36e59cc33df69b84c8d"
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "working_directory": "analysis/08_fig7c_enrichment/code",
+  "rerun": [
+    "2026-10-05, solubility parameter replaced (00_runbook/update_solubility_parameter.py)",
+    "2026-10-07, rerun after the removal of fields the manuscript does not report (00_runbook/rerun_20261007.py)"
+  ],
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5"
+  }
+}

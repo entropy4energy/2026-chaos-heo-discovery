@@ -1,0 +1,3 @@
+Done. Outputs written to:
+  Excel: analysis/05_fig6d_chemistry/output/efa_chemical_descriptor_correlations.xlsx
+  TXT:   analysis/05_fig6d_chemistry/output/efa_chemical_descriptor_correlation_report.txt

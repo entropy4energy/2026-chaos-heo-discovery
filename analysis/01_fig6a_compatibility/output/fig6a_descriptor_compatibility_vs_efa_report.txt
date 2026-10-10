@@ -1,0 +1,48 @@
+Figure 6a: descriptor compatibility score vs EFA percentile
+==============================================================================
+
+1. Purpose
+   This analysis builds a 2D map using a descriptor-only CHAOS compatibility
+   score on the x-axis
+   and EFA percentile on the y-axis.
+
+2. Data source
+   Input workbook: analysis/01_fig6a_compatibility/input/locked_493.xlsx
+   Sheet: combined
+   Rows used: 493
+   Public-only mode: False
+
+3. Axes
+   y-axis: EFA_percentile = rank(EFA) scaled to [0, 1].
+   x-axis: S_CHAOS, a descriptor-only compatibility score.
+
+4. Descriptor score definition
+   S_distortion = mean[1-P(epsilon_bar), 1-P(d_bar)]
+   S_chemistry  = mean[1-P(delta_r_Ghosh), 1-P(delta_chi_Ghosh), P(Lambda_Ghosh), P(VEC)]
+   S_CHAOS = 0.500*S_distortion + 0.500*S_chemistry
+   Larger S_CHAOS means lower relaxation-induced distortion, lower chemical mismatch,
+   higher entropy-to-mismatch parameter, and higher VEC.
+
+5. Excluded quantities
+   EFA is used only for the y-axis percentile and high-EFA class labels.
+
+6. Correlation between x-axis and y-axis
+   Pearson r = 0.4812, p = 6.244e-30
+   Spearman rho = 0.4712, p = 1.287e-28
+
+7. Quadrant/class counts
+                              true_class  count  fraction
+high-EFA + high descriptor compatibility    163  0.330629
+                           high-EFA only     84  0.170385
+      high descriptor compatibility only     80  0.162272
+                                   other    166  0.336714
+
+8. Output files
+   Excel workbook: analysis/01_fig6a_compatibility/output/fig6a_descriptor_compatibility_vs_efa_analysis.xlsx
+   TXT report:     analysis/01_fig6a_compatibility/output/fig6a_descriptor_compatibility_vs_efa_report.txt
+
+9. Suggested interpretation
+   The figure is a percentile-ranked 2D map with an independent descriptor-only
+   compatibility score on the x-axis.
+   The upper-right region corresponds to entries that are both high-EFA and
+   structurally/chemically compatible according to CHAOS descriptors.

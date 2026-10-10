@@ -1,0 +1,10 @@
+{
+  "script": "01_analyze_fig6a_descriptor_compatibility_vs_efa.py",
+  "input": "analysis/01_fig6a_compatibility/input/locked_493.xlsx",
+  "sheet": "combined",
+  "outputs": {
+    "excel": "analysis/01_fig6a_compatibility/output/fig6a_descriptor_compatibility_vs_efa_analysis.xlsx",
+    "report": "analysis/01_fig6a_compatibility/output/fig6a_descriptor_compatibility_vs_efa_report.txt"
+  },
+  "raw_efa_in_public_plot_data": false
+}

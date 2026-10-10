@@ -1,0 +1,2 @@
+Done. Excel: analysis/04_fig6d_distortion/output/efa_lattice_descriptor_correlations.xlsx
+Done. TXT:   analysis/04_fig6d_distortion/output/efa_lattice_descriptor_correlation_report.txt

@@ -1,0 +1,2 @@
+constant_config_columns,seed42_max_abs_prediction_difference_regression,seed42_max_abs_prediction_difference_classification,numerically_identical_at_1e_10
+"['S_config_atom', 'S_config_cell', 'S_config_partial_atom', 'S_config_rfu', 'S_config_species', 'S_config_sublattice']",1.2434497875801753e-14,5.895284260759581e-14,True

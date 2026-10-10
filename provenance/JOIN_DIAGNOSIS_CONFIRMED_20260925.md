@@ -1,0 +1,9 @@
+# Confirmed EFA join error
+
+This note supersedes `JOIN_DIAGNOSIS.md` dated 2026-09-24 on one point: the original merge implementation is now available as `merge_efa_deed_data.m`, so the cause can be confirmed from code rather than inferred from output alone.
+
+`extract_element.m` extracts elements from each full POCC `name` but retains only the **first four cations** in `Metal1`–`Metal4`. `merge_efa_deed_data.m` then joins `chaos_data.xlsx!B:E` to `lib5_efa_deed.xlsx!cleaned!A:D` using the sorted four-element set. It does not consult the complete composition or oxygen/cation fractions. The EFA library contains four-cation systems. Each of the ten five-cation rows therefore receives the EFA value of its four-cation parent. The stored `efa_original_row` points to that parent, and `EFA` matches the source parent at stored precision in all ten cases. `match_count=1` means only one **four-metal key** was found; it is not evidence that the five-cation composition was correctly matched.
+
+The affected compositions are (Co,Cu,Mn,Ni,Zn)O; (Co,Cu,Mg,Ni,Zn)O; (Fe,Mg,Mn,Ni,Zn)O; (Co,Cu,Fe,Mg,Zn)O; (Ca,Cd,Mg,Ni,Zn)O; (Cu,Mg,Mn,V,Zn)O; (Co,Mg,Sn,Sr,Ti)O; (Fe,Nb,Sn,Ti,V)O; (Mg,Nb,Sn,Ti,V)O; and (Mg,Nb,Sn,V,Zn)O. The `Five-cation issue` sheet of `chaos_efa_provenance_493_rows.xlsx` supplies row-by-row keys and parent records.
+
+The 493 genuine four-cation rows have distinct keys and source matches in this directory. No corrected five-cation EFA numbers were inserted or inferred here. The original directory has no five-cation EFA library; the separate DFT `entropy_forming_ability` field should not be substituted without establishing its calculation lineage and equality to the merged EFA definition. Downstream analyses using the ten five-cation rows should be revisited once the proper five-cation EFA records and a composition- or AUID-safe join are available.

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using this repository."
+title: "CHAOS: A First-Principles Database for High-Entropy Oxide Discovery"
+type: dataset
+authors:
+- family-names: Hu
+  given-names: Jiayue
+- family-names: Tseng
+  given-names: Shao-Yu
+- family-names: Brownrigg
+  given-names: Matthew
+- family-names: Boctor
+  given-names: Peter
+- family-names: Han
+  given-names: Guangshuai
+- family-names: Li
+  given-names: Tianhao
+- family-names: Shiber
+  given-names: William
+- family-names: Xu
+  given-names: Xiao
+- family-names: Lim
+  given-names: Bryan
+- family-names: Niyogi
+  given-names: Maya
+- family-names: Clark
+  given-names: Keith
+- family-names: Oses
+  given-names: Corey
+repository-code: "https://github.com/entropy4energy/2026-chaos-heo-discovery"
+version: "v1.1-submission"
+date-released: "2026-10-10"

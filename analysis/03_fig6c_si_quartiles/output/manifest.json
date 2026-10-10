@@ -1,0 +1,12 @@
+{
+  "script": "01_analyze_efa_quartile_classes_with_originpro.py",
+  "input": "analysis/03_fig6c_si_quartiles/input/locked_493.xlsx",
+  "sheet": "combined",
+  "rows_raw": 493,
+  "rows_used": 493,
+  "outputs": {
+    "Main Excel workbook": "analysis/03_fig6c_si_quartiles/output/efa_quartile_class_analysis.xlsx",
+    "OriginPro subplot Excel workbook": "analysis/03_fig6c_si_quartiles/output/efa_quartile_class_originpro_subplots.xlsx",
+    "TXT report": "analysis/03_fig6c_si_quartiles/output/efa_quartile_class_analysis_report.txt"
+  }
+}

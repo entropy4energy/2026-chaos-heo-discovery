@@ -1,0 +1,22 @@
+{
+  "cohort_name": "493 exact-composition quaternary EFA entries",
+  "selection_rule": "cation_count=4; Metal5 blank; match_count=1; exact full-cation set in lib5 cleaned; positive EFA",
+  "n_source_rows": 503,
+  "n_locked_rows": 493,
+  "n_excluded_quinaries": 10,
+  "n_unique_cation_sets": 493,
+  "high_EFA_count": 124,
+  "config_entropy_unique_counts": {
+    "S_config_atom": 1,
+    "S_config_cell": 1,
+    "S_config_partial_atom": 1,
+    "S_config_rfu": 1,
+    "S_config_species": 1,
+    "S_config_sublattice": 1
+  },
+  "source_paths_and_hashes": {
+    "LOCAL_WORKDIR/outputs/chaos_efa_join_20260925/chaos_data_with_efa_deed.xlsx": "ede6cbe878781714006726a2e7b1c8516e710e80151479aafa3ce45f8187973e",
+    "GROUP_SHARE/PROJECT_FOLDER/8.EFA_DEED/1.data/lib5_efa_deed.xlsx": "a9d8a0a5422764881ba1004420266a7f16b5e76efbe49865a5a989f3dc430c84",
+    "GROUP_SHARE/PROJECT_FOLDER/8.EFA_DEED/1.data/chaos_data_with_efa_deed.xlsx": "6006ca7ac1f0d7a56668ea77f7c0bec92896225a21e2c2662d9eae440834d147"
+  }
+}

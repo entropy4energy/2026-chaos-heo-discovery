@@ -1,0 +1,33 @@
+{
+  "command": [
+    "python3",
+    "analysis/00_runbook/legacy_gkf.py",
+    "analysis/02_fig6b_pca/code/01_analyze_pca_efa_chaos_descriptors_H_L_S_AK.py",
+    "--input",
+    "analysis/02_fig6b_pca/input/locked_493.xlsx",
+    "--outdir",
+    "analysis/02_fig6b_pca/output"
+  ],
+  "returncode": 0,
+  "input_sha256": "05e4157985bd8b7c8ce58ed38a32f99842c6544e04a909c184a2ccba59686e22",
+  "script_snapshots": [
+    {
+      "snapshot": "02_fig6b_pca/code/01_analyze_pca_efa_chaos_descriptors_H_L_S_AK.py",
+      "sha256": "5d17d34c634367f3254f4ef28cbff7244ab57906656a6c062237fd30357b6410"
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "working_directory": "analysis/02_fig6b_pca/code",
+  "rerun": [
+    "2026-10-05, solubility parameter replaced (00_runbook/update_solubility_parameter.py)",
+    "2026-10-07, rerun after the removal of fields the manuscript does not report (00_runbook/rerun_20261007.py)"
+  ],
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5"
+  }
+}

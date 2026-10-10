@@ -1,0 +1,9 @@
+{
+  "script": "01_analyze_efa_chemical_descriptor_correlations.py",
+  "input": "analysis/05_fig6d_chemistry/input/locked_493.xlsx",
+  "sheet": "combined",
+  "outputs": {
+    "excel": "analysis/05_fig6d_chemistry/output/efa_chemical_descriptor_correlations.xlsx",
+    "txt": "analysis/05_fig6d_chemistry/output/efa_chemical_descriptor_correlation_report.txt"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "compatibility_at_least_0.75": {
+    "entries": 71,
+    "high_EFA": 49
+  },
+  "figure7d_priority_region": {
+    "entries": 52,
+    "high_EFA": 48
+  },
+  "table_s3": {
+    "rows": 43,
+    "exact": 6,
+    "subset": 37,
+    "top_EFA_quartile": 40,
+    "exact_in_top_EFA_quartile": 6
+  },
+  "priority_region_and_table_s3": {
+    "in_table_s3": 30,
+    "not_in_table_s3": 22,
+    "not_in_table_s3_with_Cd": 18,
+    "not_in_table_s3_keys": [
+      "Ca,Co,Fe,Mn",
+      "Ca,Fe,Mn,Zn",
+      "Cd,Co,Cu,Fe",
+      "Cd,Co,Fe,Mg",
+      "Cd,Co,Fe,Mn",
+      "Cd,Co,Fe,Ni",
+      "Cd,Co,Fe,Zn",
+      "Cd,Co,Mg,Mn",
+      "Cd,Co,Mg,Ni",
+      "Cd,Co,Mg,Zn",
+      "Cd,Co,Mn,Zn",
+      "Cd,Co,Ni,Zn",
+      "Cd,Cu,Mg,Zn",
+      "Cd,Fe,Mg,Mn",
+      "Cd,Fe,Mg,Zn",
+      "Cd,Fe,Mn,Ni",
+      "Cd,Fe,Mn,Zn",
+      "Cd,Mg,Mn,Zn",
+      "Cd,Mg,Ni,Zn",
+      "Cd,Mn,Ni,Zn",
+      "Co,Mg,Mn,V",
+      "Mn,Ni,V,Zn"
+    ]
+  }
+}
