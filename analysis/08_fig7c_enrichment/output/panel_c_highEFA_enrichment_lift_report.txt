@@ -1,0 +1,42 @@
+Panel (c): Enrichment / lift plot for high-EFA screening
+========================================================================
+Input workbook: analysis/08_fig7c_enrichment/input/locked_493.xlsx
+Sheet: combined
+Rows used: 493
+Positive class: EFA_percentile >= 0.75
+Baseline high-EFA prevalence: 0.2515
+Cross-validation: 5-fold, grouped by cation family when repeated families are present
+Model: median imputation + standard scaling + class-balanced logistic regression
+
+Classifier metrics:
+ feature_group  n_features   N  Prevalence  ROC_AUC  Average_precision  Brier_score
+      DFT only           5 493    0.251521 0.882660           0.718686     0.143498
+Chemistry only          19 493    0.251521 0.877830           0.701955     0.131700
+      Combined          30 493    0.251521 0.921934           0.755553     0.104383
+
+Top-k enrichment highlights:
+ feature_group  top_fraction_percent  top_n  true_high_EFA_hits  precision_in_top_k  recall_in_top_k  enrichment_factor  baseline_prevalence
+      DFT only                     5     25                  22            0.880000         0.177419           3.498710             0.251521
+      DFT only                    10     50                  39            0.780000         0.314516           3.101129             0.251521
+      DFT only                    20     99                  74            0.747475         0.596774           2.971815             0.251521
+      DFT only                    25    124                  85            0.685484         0.685484           2.725351             0.251521
+      DFT only                    50    247                 111            0.449393         0.895161           1.786698             0.251521
+Chemistry only                     5     25                  19            0.760000         0.153226           3.021613             0.251521
+Chemistry only                    10     50                  42            0.840000         0.338710           3.339677             0.251521
+Chemistry only                    20     99                  79            0.797980         0.637097           3.172613             0.251521
+Chemistry only                    25    124                  87            0.701613         0.701613           2.789477             0.251521
+Chemistry only                    50    247                 112            0.453441         0.903226           1.802795             0.251521
+      Combined                     5     25                  21            0.840000         0.169355           3.339677             0.251521
+      Combined                    10     50                  42            0.840000         0.338710           3.339677             0.251521
+      Combined                    20     99                  80            0.808081         0.645161           3.212773             0.251521
+      Combined                    25    124                  96            0.774194         0.774194           3.078044             0.251521
+      Combined                    50    247                 116            0.469636         0.935484           1.867180             0.251521
+
+Interpretation:
+  The enrichment factor is the fraction of true high-EFA systems in the top-ranked candidates
+  divided by the overall high-EFA prevalence. Values above 1 indicate that the model reduces
+  the experimental search space by concentrating high-EFA entries near the top of the ranking.
+
+Excel output: analysis/08_fig7c_enrichment/output/panel_c_highEFA_enrichment_lift_data.xlsx
+Figure PNG:   analysis/08_fig7c_enrichment/output/panel_c_highEFA_enrichment_lift.png
+Figure PDF:   analysis/08_fig7c_enrichment/output/panel_c_highEFA_enrichment_lift.pdf

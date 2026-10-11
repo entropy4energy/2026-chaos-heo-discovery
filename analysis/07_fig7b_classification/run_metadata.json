@@ -1,0 +1,37 @@
+{
+  "command": [
+    "python3",
+    "analysis/00_runbook/legacy_gkf.py",
+    "analysis/07_fig7b_classification/code/panel_b_highEFA_ROC_PR_curves.py",
+    "--input",
+    "analysis/07_fig7b_classification/input/locked_493.xlsx",
+    "--outdir",
+    "analysis/07_fig7b_classification/output"
+  ],
+  "returncode": 0,
+  "input_sha256": "05e4157985bd8b7c8ce58ed38a32f99842c6544e04a909c184a2ccba59686e22",
+  "script_snapshots": [
+    {
+      "snapshot": "07_fig7b_classification/code/panel_b_highEFA_ROC_PR_curves.py",
+      "sha256": "537f6ad52117c6f5d32fa5945ca3878ece769c6f27a79acddaf5031605d8ac2e"
+    },
+    {
+      "snapshot": "07_fig7b_classification/code/efa_screening_common.py",
+      "sha256": "ebdd68d0421d379acdc5239bb175ae8c006745ffda10b36e59cc33df69b84c8d"
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "working_directory": "analysis/07_fig7b_classification/code",
+  "rerun": [
+    "2026-10-05, solubility parameter replaced (00_runbook/update_solubility_parameter.py)",
+    "2026-10-07, rerun after the removal of fields the manuscript does not report (00_runbook/rerun_20261007.py)"
+  ],
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5"
+  }
+}

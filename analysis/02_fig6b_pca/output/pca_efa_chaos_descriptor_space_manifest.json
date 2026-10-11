@@ -1,0 +1,11 @@
+{
+  "script": "01_analyze_pca_efa_chaos_descriptors_H_L_S_AK.py",
+  "input": "analysis/02_fig6b_pca/input/locked_493.xlsx",
+  "sheet": "combined",
+  "outputs": {
+    "excel": "analysis/02_fig6b_pca/output/pca_efa_chaos_descriptor_space_H_L_S_AK_analysis.xlsx",
+    "txt": "analysis/02_fig6b_pca/output/pca_efa_chaos_descriptor_space_H_L_S_AK_report.txt"
+  },
+  "PCA_input": "H-L + S-AK",
+  "EFA_used_as_input": false
+}

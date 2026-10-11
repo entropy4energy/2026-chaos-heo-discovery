@@ -1,0 +1,6 @@
+field,merged_rows,numeric_matches_at_1e-12,missing_comparisons,maximum_absolute_difference
+lat_distortion_misfit_mean,503,503,0,1.3877787807814457e-17
+lat_distortion_misfit_stdev,503,503,0,0.0
+lat_distortion_relax_distance_mean,503,503,0,5.551115123125783e-17
+lat_distortion_relax_distance_stdev,503,503,0,0.0
+solubility_parameter,503,503,0,0.0

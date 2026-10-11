@@ -1,0 +1,24 @@
+Panel (b): ROC/PR curves for high-EFA classification
+========================================================================
+Input workbook: analysis/07_fig7b_classification/input/locked_493.xlsx
+Sheet: combined
+Rows used: 493
+Positive class: EFA_percentile >= 0.75
+Positive-class prevalence: 0.2515
+Cross-validation: 5-fold, grouped by cation family when repeated families are present
+Model: median imputation + standard scaling + class-balanced logistic regression
+
+Cross-validated classification metrics:
+ feature_group  n_features   N  Prevalence  ROC_AUC  Average_precision  Brier_score  Accuracy_at_0.5  Balanced_accuracy_at_0.5  Precision_at_0.5  Recall_at_0.5  F1_at_0.5
+      DFT only           5 493    0.251521 0.882660           0.718686     0.143498         0.789047                  0.805534          0.553191       0.838710   0.666667
+Chemistry only          19 493    0.251521 0.877830           0.701955     0.131700         0.821501                  0.824537          0.605882       0.830645   0.700680
+      Combined          30 493    0.251521 0.921934           0.755553     0.104383         0.860041                  0.858314          0.675159       0.854839   0.754448
+
+Interpretation:
+  ROC-AUC measures how well each descriptor group ranks high-EFA systems above other entries.
+  The precision–recall curve emphasizes experimental screening value because high-EFA entries
+  are a minority class. Curves above the baseline prevalence indicate enrichment of high-EFA candidates.
+
+Excel output: analysis/07_fig7b_classification/output/panel_b_highEFA_ROC_PR_data.xlsx
+Figure PNG:   analysis/07_fig7b_classification/output/panel_b_highEFA_ROC_PR_curves.png
+Figure PDF:   analysis/07_fig7b_classification/output/panel_b_highEFA_ROC_PR_curves.pdf

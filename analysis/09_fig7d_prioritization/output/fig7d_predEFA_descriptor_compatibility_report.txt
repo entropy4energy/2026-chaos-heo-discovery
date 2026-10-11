@@ -1,0 +1,92 @@
+Figure 7d: predicted EFA percentile vs descriptor compatibility score
+================================================================================
+
+Purpose
+  The y-axis is a descriptor-only compatibility score.
+  The x-axis remains the out-of-fold predicted EFA percentile.
+
+Inputs
+  Input workbook: analysis/09_fig7d_prioritization/input/locked_493.xlsx
+  Sheet: combined
+  Rows used: 493
+  Feature group for EFA prediction: combined
+  Number of features: 30
+  Cross-validation: GroupKFold(n_splits=5)
+  Model: median imputation + standard scaling + RidgeCV
+  EFA used: only as the regression target and to define the true high-EFA class
+
+Descriptor compatibility score
+  S_distortion = [1-P(epsilon_bar) + 1-P(d_bar)] / 2
+  S_chemistry  = [1-P(delta_r_Ghosh) + 1-P(delta_chi_Ghosh) + P(Lambda_Ghosh) + P(VEC)] / 4
+  S_CHAOS      = 0.5*S_distortion + 0.5*S_chemistry
+  Larger S_CHAOS indicates lower distortion, lower chemical mismatch, higher Lambda_Ghosh, and higher VEC.
+
+Class definitions
+  true high-EFA: observed EFA percentile >= 0.75
+  true high descriptor compatibility score: S_CHAOS >= 0.75
+
+Regression metrics for predicted log10(EFA)
+  N: 493
+  R2: 0.5988250351590299
+  RMSE: 0.20061038484901236
+  MAE: 0.15429980502061066
+  Pearson_r: 0.7754831886676431
+  Pearson_p: 4.0256582236320336e-100
+  Spearman_rho: 0.8133579804234699
+  Spearman_p: 1.3676400886111068e-117
+
+True-class counts
+                                         true_class  count  fraction
+                                              other    347  0.703854
+      true high descriptor compatibility score only     22  0.044625
+                                 true high-EFA only     75  0.152130
+true high-EFA + high descriptor compatibility score     49  0.099391
+
+Upper-right predicted-priority region summary
+  rows: 493
+  feature_group: combined
+  n_features: 30
+  true_high_EFA_prevalence: 0.2515212981744422
+  true_high_descriptor_compatibility_prevalence: 0.1440162271805274
+  true_high_EFA_and_high_compatibility_prevalence: 0.09939148073022312
+  predicted_priority_region_count: 52
+  predicted_priority_region_precision_for_true_both: 0.9230769230769231
+  predicted_priority_region_enrichment_for_true_both: 9.287284144427002
+
+Features used for predicted EFA
+  - lat_distortion_misfit_mean
+  - lat_distortion_misfit_stdev
+  - lat_distortion_relax_distance_mean
+  - lat_distortion_relax_distance_stdev
+  - solubility_parameter
+  - S_config_atom
+  - S_config_cell
+  - S_config_partial_atom
+  - S_config_rfu
+  - S_config_species
+  - S_config_sublattice
+  - VEC
+  - delta_electronegativity_Allen
+  - delta_electronegativity_Ghosh
+  - delta_electronegativity_Pauling
+  - delta_electronegativity_Pearson
+  - delta_radii_Ghosh08
+  - delta_radii_Pyykko
+  - delta_radii_Slatter
+  - delta_radius_PT
+  - delta_radius_Saxena
+  - delta_radius_covalent_PT
+  - delta_radius_covalent
+  - param_geo_radii_Ghosh08
+  - param_geo_radii_Pyykko
+  - param_geo_radii_Slatter
+  - param_geo_radius_PT
+  - param_geo_radius_Saxena
+  - param_geo_radius_covalent_PT
+  - param_geo_radius_covalent
+
+Interpretation
+  This panel converts EFA prediction into a descriptor-grounded screening map.
+  The upper-right region corresponds to high predicted EFA and high CHAOS descriptor compatibility.
+  Enrichment of true high-EFA + high-compatibility systems in this region supports using CHAOS descriptors
+  to identify materials that are both entropy-forming and descriptor-compatible.

@@ -1,0 +1,991 @@
+{
+  "observed_run_setting_groups": [
+    {
+      "example_run_id": "HEO-C-001-A__S1G__r1",
+      "run_count": 180,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "S1G"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__S1__r1",
+      "run_count": 180,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "S1"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__S2__r1",
+      "run_count": 180,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "S2"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__S3__r1",
+      "run_count": 180,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "S3"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__S4__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "gpus": 0,
+          "host": "codex-cli",
+          "label": "GPT-5.6 Sol (Codex CLI)",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "served_model_name": "gpt-5.6-sol"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "reasoning_effort": "high"
+        },
+        "limits": {
+          "max_semantic_tool_calls": 0,
+          "max_wall_time_s": 600
+        },
+        "streamed": false,
+        "system": "S4"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__S5__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "gpus": 0,
+          "host": "codex-cli",
+          "label": "GPT-5.6 Sol (Codex CLI)",
+          "model_id": "gpt-5.6-sol",
+          "reasoning_effort": "high",
+          "served_model_name": "gpt-5.6-sol"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "reasoning_effort": "high"
+        },
+        "limits": {
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420
+        },
+        "streamed": false,
+        "system": "S5"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__A1__r1",
+      "run_count": 64,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "A1"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__A2__r1",
+      "run_count": 64,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "A2"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__A3__r1",
+      "run_count": 62,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "A3"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__A4__r1",
+      "run_count": 62,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+          "gpus": 4,
+          "host": "gpu_node_a",
+          "label": "Laguna-S-2.1-FP8",
+          "model_id": "poolside/Laguna-S-2.1-FP8",
+          "quantization": "fp8",
+          "served_model_name": "laguna",
+          "vllm_version": "0.25.1"
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "A4"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__GM-M__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": null,
+          "gpus": 1,
+          "host": "gpu_node_a",
+          "label": "Gemma-4-31B-it-FP8-block",
+          "model_id": "RedHatAI/gemma-4-31B-it-FP8-block",
+          "quantization": "compressed-tensors-fp8",
+          "served_model_name": "gemma31b",
+          "vllm_version": null
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "GM-M"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__GM-T__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": null,
+          "gpus": 1,
+          "host": "gpu_node_a",
+          "label": "Gemma-4-31B-it-FP8-block",
+          "model_id": "RedHatAI/gemma-4-31B-it-FP8-block",
+          "quantization": "compressed-tensors-fp8",
+          "served_model_name": "gemma31b",
+          "vllm_version": null
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "GM-T"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__MG-M__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": null,
+          "gpus": 2,
+          "host": "gpu_node_a",
+          "label": "Muse-Glimmer-30B (Q8_0 GGUF)",
+          "model_id": "unsloth/Muse-Glimmer-30B-GGUF",
+          "quantization": "gguf-q8_0",
+          "served_model_name": "glimmer30b",
+          "vllm_version": null
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "MG-M"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__MG-T__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": null,
+          "gpus": 2,
+          "host": "gpu_node_a",
+          "label": "Muse-Glimmer-30B (Q8_0 GGUF)",
+          "model_id": "unsloth/Muse-Glimmer-30B-GGUF",
+          "quantization": "gguf-q8_0",
+          "served_model_name": "glimmer30b",
+          "vllm_version": null
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "MG-T"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__Q8-M__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": null,
+          "gpus": 2,
+          "host": "gpu_node_a",
+          "label": "Qwen3.8-27B-FP8",
+          "model_id": "Qwen/Qwen3.8-27B-FP8",
+          "quantization": "fp8",
+          "served_model_name": "qwen38",
+          "vllm_version": null
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "Q8-M"
+      }
+    },
+    {
+      "example_run_id": "HEO-C-001-A__Q8-T__r1",
+      "run_count": 60,
+      "settings": {
+        "backbone": {
+          "checkpoint_revision": null,
+          "gpus": 2,
+          "host": "gpu_node_a",
+          "label": "Qwen3.8-27B-FP8",
+          "model_id": "Qwen/Qwen3.8-27B-FP8",
+          "quantization": "fp8",
+          "served_model_name": "qwen38",
+          "vllm_version": null
+        },
+        "chat_template_kwargs": null,
+        "generation": {
+          "max_output_tokens": 16384,
+          "temperature": 0.0,
+          "top_p": 1.0
+        },
+        "limits": {
+          "concurrency_per_endpoint": 1,
+          "infrastructure_retries": 2,
+          "max_semantic_tool_calls": 8,
+          "max_wall_time_s": 420,
+          "retry_backoff_s": [
+            5,
+            15
+          ]
+        },
+        "streamed": true,
+        "system": "Q8-T"
+      }
+    }
+  ],
+  "registered_configuration": {
+    "ablations": {
+      "A1": {
+        "change": "remove_tool",
+        "from": [
+          "S1"
+        ],
+        "tool_allowlist": [
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "A2": {
+        "change": "remove_tool",
+        "from": [
+          "S1"
+        ],
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_query"
+        ]
+      },
+      "A3": {
+        "change": "disable_repair",
+        "from": [
+          "S1"
+        ],
+        "max_semantic_tool_calls": 1
+      },
+      "A4": {
+        "change": "remove_auid_rule",
+        "from": [
+          "S1"
+        ],
+        "prompt": "prompts/agent_full_no_auid_rule.md"
+      }
+    },
+    "backbones": {
+      "gemma31b": {
+        "api_key_env": "SWEEP_GEMMA31B_API_KEY",
+        "architecture": "Gemma4ForConditionalGeneration",
+        "base_url_env": "SWEEP_GEMMA31B_BASE_URL",
+        "gpus": 1,
+        "host": "gpu_node_a",
+        "label": "Gemma-4-31B-it-FP8-block",
+        "limit": {
+          "context": 32768,
+          "output": 16384
+        },
+        "model_id": "RedHatAI/gemma-4-31B-it-FP8-block",
+        "provider": "self_hosted_vllm",
+        "quantization": "compressed-tensors-fp8",
+        "served_model_name": "gemma31b",
+        "wire": "openai_compatible"
+      },
+      "glimmer30b": {
+        "api_key_env": "SWEEP_GLIMMER30B_API_KEY",
+        "architecture": "MuseGlimmerForConditionalGeneration",
+        "base_url_env": "SWEEP_GLIMMER30B_BASE_URL",
+        "gguf_file": "Muse-Glimmer-30B-Q8_0.gguf",
+        "gpus": 2,
+        "host": "gpu_node_a",
+        "label": "Muse-Glimmer-30B (Q8_0 GGUF)",
+        "limit": {
+          "context": 131072,
+          "output": 16384
+        },
+        "model_id": "unsloth/Muse-Glimmer-30B-GGUF",
+        "provider": "self_hosted_llamacpp",
+        "quantization": "gguf-q8_0",
+        "served_model_name": "glimmer30b",
+        "upstream_model": "meta-models/Muse-Glimmer-30B",
+        "wire": "openai_compatible"
+      },
+      "gpt56sol": {
+        "api_key_env": "OPENAI_API_KEY",
+        "base_url_env": "OPENAI_BASE_URL",
+        "budget_usd": 25,
+        "checkpoint_revision": "PENDING",
+        "host": "external_api",
+        "label": "GPT-5.6 Sol",
+        "limit": {
+          "context": 1050000,
+          "output": 32768
+        },
+        "model_id": "gpt-5.6-sol",
+        "provider": "openai",
+        "wire": "openai_compatible"
+      },
+      "gptoss120b": {
+        "api_key_env": "SWEEP_GPTOSS120B_API_KEY",
+        "architecture": "GptOssForCausalLM",
+        "base_url_env": "SWEEP_GPTOSS120B_BASE_URL",
+        "gpus": 2,
+        "host": "gpu_node_a",
+        "label": "gpt-oss-120b (MXFP4)",
+        "limit": {
+          "context": 32768,
+          "output": 16384
+        },
+        "model_id": "openai/gpt-oss-120b",
+        "provider": "self_hosted_vllm",
+        "quantization": "mxfp4",
+        "served_model_name": "gptoss120b",
+        "wire": "openai_compatible"
+      },
+      "laguna": {
+        "api_key_env": "CHAOS_LAGUNA_API_KEY",
+        "architecture": "LagunaForCausalLM",
+        "base_url_env": "CHAOS_LAGUNA_BASE_URL",
+        "checkpoint_revision": "fc72eb9025540b2225a681bb81950cc1225ff286",
+        "dedicated_endpoint_job": 2064921,
+        "gpus": 4,
+        "host": "gpu_node_a",
+        "label": "Laguna-S-2.1-FP8",
+        "limit": {
+          "context": 262144,
+          "output": 32768
+        },
+        "model_id": "poolside/Laguna-S-2.1-FP8",
+        "provider": "self_hosted_vllm",
+        "quantization": "fp8",
+        "reasoning_parser": "poolside_v1",
+        "served_model_name": "laguna",
+        "tool_call_parser": "poolside_v1",
+        "verified_utc": "2026-08-17T01:40Z",
+        "vllm_version": "0.25.1",
+        "wire": "openai_compatible"
+      },
+      "maple2bit": {
+        "api_key_env": "SWEEP_MAPLE_API_KEY",
+        "architecture": "MapleForCausalLM",
+        "base_url_env": "SWEEP_MAPLE_BASE_URL",
+        "gpus": 0,
+        "host": "local_mac_m4",
+        "label": "maple-preview-2bit-mlx",
+        "limit": {
+          "context": 32768,
+          "output": 16384
+        },
+        "model_id": "deepgrove/maple-preview-2bit-mlx",
+        "provider": "self_hosted_mlx",
+        "quantization": "mlx-2bit",
+        "served_model_name": "deepgrove/maple-preview-2bit-mlx",
+        "wire": "openai_compatible"
+      },
+      "nemotron30b": {
+        "api_key_env": "SWEEP_NEMOTRON30B_API_KEY",
+        "architecture": "NemotronHForCausalLM",
+        "base_url_env": "SWEEP_NEMOTRON30B_BASE_URL",
+        "gpus": 1,
+        "host": "gpu_node_a",
+        "label": "Nemotron-3-Nano-30B-A3B-FP8",
+        "limit": {
+          "context": 32768,
+          "output": 16384
+        },
+        "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+        "provider": "self_hosted_vllm",
+        "quantization": "fp8",
+        "served_model_name": "nemotron30b",
+        "wire": "openai_compatible"
+      },
+      "qwen": {
+        "api_key_env": "CHAOS_QWEN_API_KEY",
+        "architecture": "Qwen3_5MoeForConditionalGeneration",
+        "base_url_env": "CHAOS_QWEN_BASE_URL",
+        "checkpoint_revision": "95a723d08a9490559dae23d0cff1d9466213d989",
+        "gpus": 2,
+        "host": "gpu_node_b",
+        "label": "Qwen3.6-35B-A3B-FP8",
+        "limit": {
+          "context": 262144,
+          "output": 32768
+        },
+        "model_id": "Qwen/Qwen3.6-35B-A3B-FP8",
+        "partition": "nvl",
+        "provider": "self_hosted_vllm",
+        "quantization": "fp8",
+        "reasoning_parser": "qwen3",
+        "served_model_name": "s4e-qwen3.6-35b",
+        "slurm_job": 2064920,
+        "tool_call_parser": "qwen3_coder",
+        "vllm_version": "0.26.0",
+        "wire": "openai_compatible"
+      },
+      "qwen27b": {
+        "api_key_env": "SWEEP_QWEN27B_API_KEY",
+        "architecture": "Qwen3_5ForConditionalGeneration",
+        "base_url_env": "SWEEP_QWEN27B_BASE_URL",
+        "gpus": 1,
+        "host": "gpu_node_a",
+        "label": "Qwen3.6-27B-FP8",
+        "limit": {
+          "context": 32768,
+          "output": 16384
+        },
+        "model_id": "Qwen/Qwen3.6-27B-FP8",
+        "provider": "self_hosted_vllm",
+        "quantization": "fp8",
+        "reasoning_parser": "qwen3",
+        "served_model_name": "qwen27b",
+        "tool_call_parser": "qwen3_coder",
+        "wire": "openai_compatible"
+      },
+      "qwen38": {
+        "api_key_env": "SWEEP_QWEN38_API_KEY",
+        "architecture": "Qwen3_5ForConditionalGeneration",
+        "base_url_env": "SWEEP_QWEN38_BASE_URL",
+        "gpus": 2,
+        "host": "gpu_node_a",
+        "label": "Qwen3.8-27B-FP8",
+        "limit": {
+          "context": 131072,
+          "output": 16384
+        },
+        "model_id": "Qwen/Qwen3.8-27B-FP8",
+        "provider": "self_hosted_vllm",
+        "quantization": "fp8",
+        "reasoning_parser": "qwen3",
+        "served_model_name": "qwen38",
+        "tool_call_parser": "qwen3_xml",
+        "wire": "openai_compatible"
+      }
+    },
+    "defaults": {
+      "generation": {
+        "max_output_tokens": 16384,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "limits": {
+        "concurrency_per_endpoint": 1,
+        "infrastructure_retries": 2,
+        "max_semantic_tool_calls": 8,
+        "max_wall_time_s": 420,
+        "retry_backoff_s": [
+          5,
+          15
+        ]
+      },
+      "streaming": true
+    },
+    "extension_systems": {
+      "S1Q": {
+        "access": "live_mcp",
+        "backbone": "qwen",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "S2Q": {
+        "access": "none",
+        "backbone": "qwen",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "S3Q": {
+        "access": "static",
+        "backbone": "qwen",
+        "prompt": "prompts/static_oneshot.md",
+        "repair": false,
+        "tool_allowlist": []
+      }
+    },
+    "sweep_systems": {
+      "GM-M": {
+        "access": "live_mcp",
+        "backbone": "gemma31b",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "GM-T": {
+        "access": "none",
+        "backbone": "gemma31b",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "GO-M": {
+        "access": "live_mcp",
+        "backbone": "gptoss120b",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "GO-T": {
+        "access": "none",
+        "backbone": "gptoss120b",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "MG-M": {
+        "access": "live_mcp",
+        "backbone": "glimmer30b",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "MG-T": {
+        "access": "none",
+        "backbone": "glimmer30b",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "MP-M": {
+        "access": "live_mcp",
+        "backbone": "maple2bit",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "MP-T": {
+        "access": "none",
+        "backbone": "maple2bit",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "NM-M": {
+        "access": "live_mcp",
+        "backbone": "nemotron30b",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "NM-T": {
+        "access": "none",
+        "backbone": "nemotron30b",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "Q8-M": {
+        "access": "live_mcp",
+        "backbone": "qwen38",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "Q8-T": {
+        "access": "none",
+        "backbone": "qwen38",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "QW-M": {
+        "access": "live_mcp",
+        "backbone": "qwen27b",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "QW-T": {
+        "access": "none",
+        "backbone": "qwen27b",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      }
+    },
+    "systems": {
+      "S1": {
+        "access": "live_mcp",
+        "backbone": "laguna",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "S1G": {
+        "access": "live_mcp",
+        "backbone": "laguna",
+        "prompt": "prompts/agent_grammar.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      },
+      "S2": {
+        "access": "none",
+        "backbone": "laguna",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "S3": {
+        "access": "static",
+        "backbone": "laguna",
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "prompt": "prompts/static_oneshot.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "S4": {
+        "access": "none",
+        "backbone": "gpt56sol",
+        "prompt": "prompts/tool_free.md",
+        "repair": false,
+        "tool_allowlist": []
+      },
+      "S5": {
+        "access": "live_mcp",
+        "backbone": "gpt56sol",
+        "prompt": "prompts/agent_full.md",
+        "repair": true,
+        "tool_allowlist": [
+          "chaos_schema",
+          "chaos_help",
+          "chaos_query"
+        ]
+      }
+    }
+  },
+  "source_register": "1.CHAOS-Agent-benchmark-data/config/systems.yaml",
+  "source_sha256": "df740aee2db28ba83c3eca714e81e3f97033b794a3cdbdfff09c50ecd5d0f773",
+  "version_caveat": "Some registered checkpoint/version fields are PENDING or marked for confirmation; these are not verified deployment pins."
+}

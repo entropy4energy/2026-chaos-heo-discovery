@@ -1,0 +1,2 @@
+Done. Excel: analysis/01_fig6a_compatibility/output/fig6a_descriptor_compatibility_vs_efa_analysis.xlsx
+Done. TXT:   analysis/01_fig6a_compatibility/output/fig6a_descriptor_compatibility_vs_efa_report.txt

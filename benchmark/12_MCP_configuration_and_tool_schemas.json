@@ -1,0 +1,81 @@
+{
+  "benchmark_runner_function": "make_tools",
+  "benchmark_runner_source": "1.CHAOS-Agent-benchmark-data/code/run_benchmark.py",
+  "benchmark_runner_source_sha256": "a3a5d1d9c94be58df27afbdef13d47431dbb6123caa8fff2900ae58488a4068e",
+  "benchmark_runner_tool_definitions": [
+    {
+      "function": {
+        "description": "Look up CHAOS/AFLUX property definitions and their exact names.",
+        "name": "chaos_schema",
+        "parameters": {
+          "properties": {
+            "term": {
+              "description": "Property or concept to look up. Omit for the full schema.",
+              "type": "string"
+            }
+          },
+          "required": [],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Retrieve CHAOS summons syntax help and worked query examples.",
+        "name": "chaos_help",
+        "parameters": {
+          "properties": {
+            "topic": {
+              "description": "Optional topic to narrow the help text.",
+              "type": "string"
+            }
+          },
+          "required": [],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Execute a CHAOS summons against the live AFLUX database and return matching records.",
+        "name": "chaos_query",
+        "parameters": {
+          "properties": {
+            "summons": {
+              "description": "e.g. species(Fe,O),paging(1,5)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "summons"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "note": "The runner reimplemented three tools against CHAOS; its schema is not evidence of the deployed chaos-mcp server's configuration or exact deployed schema. Request those from Peter with deployment version/commit.",
+  "registered_tool_allowlists": {
+    "S1": [
+      "chaos_schema",
+      "chaos_help",
+      "chaos_query"
+    ],
+    "S1G": [
+      "chaos_schema",
+      "chaos_help",
+      "chaos_query"
+    ],
+    "S5": [
+      "chaos_schema",
+      "chaos_help",
+      "chaos_query"
+    ]
+  },
+  "shipped_MCP_configuration": null,
+  "shipped_MCP_tool_schemas": null,
+  "status": "benchmark_runner_schemas_available; shipped_MCP_configuration_and_schemas_missing"
+}

@@ -1,0 +1,9 @@
+{
+  "input": "analysis/09_fig7d_prioritization/input/locked_493.xlsx",
+  "sheet": "combined",
+  "outputs": {
+    "excel": "analysis/09_fig7d_prioritization/output/fig7d_predEFA_descriptor_compatibility_analysis.xlsx",
+    "txt": "analysis/09_fig7d_prioritization/output/fig7d_predEFA_descriptor_compatibility_report.txt"
+  },
+  "raw_EFA_written": false
+}

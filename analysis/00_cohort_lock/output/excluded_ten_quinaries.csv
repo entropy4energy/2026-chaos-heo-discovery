@@ -1,0 +1,11 @@
+full_cation_key,name,cation_count,efa_join_status
+"Fe,Mg,Mn,Ni,Zn",Fe_pvMg_pvMn_pvNi_pvOZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xE_P1-0.2xA-0.2xB-0.2xC-0.2xD-0.2xF,5,No exact five-cation EFA source
+"Mg,Nb,Sn,Ti,V",Mg_pvNb_svOSnTi_svV_sv:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xC_P1-0.2xA-0.2xB-0.2xD-0.2xE-0.2xF,5,No exact five-cation EFA source
+"Co,Cu,Fe,Mg,Zn",CoCu_pvFe_pvMg_pvOZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xE_P1-0.2xA-0.2xB-0.2xC-0.2xD-0.2xF,5,No exact five-cation EFA source
+"Co,Cu,Mn,Ni,Zn",CoCu_pvMn_pvNi_pvOZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xE_P1-0.2xA-0.2xB-0.2xC-0.2xD-0.2xF,5,No exact five-cation EFA source
+"Mg,Nb,Sn,V,Zn",Mg_pvNb_svOSnV_svZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xC_P1-0.2xA-0.2xB-0.2xD-0.2xE-0.2xF,5,No exact five-cation EFA source
+"Fe,Nb,Sn,Ti,V",Fe_pvNb_svOSnTi_svV_sv:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xC_P1-0.2xA-0.2xB-0.2xD-0.2xE-0.2xF,5,No exact five-cation EFA source
+"Co,Mg,Sn,Sr,Ti",CoMg_pvOSnSr_svTi_sv:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xC_P1-0.2xA-0.2xB-0.2xD-0.2xE-0.2xF,5,No exact five-cation EFA source
+"Cu,Mg,Mn,V,Zn",Cu_pvMg_pvMn_pvOV_svZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xD_P1-0.2xA-0.2xB-0.2xC-0.2xE-0.2xF,5,No exact five-cation EFA source
+"Co,Cu,Mg,Ni,Zn",CoCu_pvMg_pvNi_pvOZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xE_P1-0.2xA-0.2xB-0.2xC-0.2xD-0.2xF,5,No exact five-cation EFA source
+"Ca,Cd,Mg,Ni,Zn",Ca_svCdMg_pvNi_pvOZn:PAW_PBE/AB_cF8_225_a_b.AB:POCC_P0-1xE_P1-0.2xA-0.2xB-0.2xC-0.2xD-0.2xF,5,No exact five-cation EFA source
