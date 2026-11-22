@@ -1,0 +1,9 @@
+{
+  "script": "01_analyze_efa_lattice_distortion_correlations.py",
+  "input": "analysis/04_fig6d_distortion/input/locked_493.xlsx",
+  "sheet": "combined",
+  "outputs": {
+    "excel": "analysis/04_fig6d_distortion/output/efa_lattice_descriptor_correlations.xlsx",
+    "txt": "analysis/04_fig6d_distortion/output/efa_lattice_descriptor_correlation_report.txt"
+  }
+}

@@ -1,0 +1,57 @@
+EFA vs lattice-distortion descriptors: calculation report
+==============================================================================
+
+1. Purpose
+   This analysis quantifies the relationship between EFA and the lattice-distortion
+   descriptors used in the CHAOS manuscript.
+   Only EFA and the five lattice-distortion descriptors were used.
+
+2. Variables
+   Target: EFA  -> figure label: EFA
+   Descriptor: lat_distortion_misfit_mean -> figure label: $\bar{\epsilon}$
+   Descriptor: lat_distortion_misfit_stdev -> figure label: $\sigma_{\epsilon}$
+   Descriptor: lat_distortion_relax_distance_mean -> figure label: $\bar{d}$
+   Descriptor: lat_distortion_relax_distance_stdev -> figure label: $\sigma_d$
+   Descriptor: solubility_parameter -> figure label: $\delta_s$
+
+3. Calculation procedure
+   a) Read the input workbook and the specified sheet.
+   b) Convert EFA and the five descriptor columns to numeric values.
+   c) Drop rows with missing EFA.
+   d) For each EFA–descriptor pair, compute:
+      - Pearson correlation coefficient and p-value
+      - Spearman correlation coefficient and p-value
+      Pairwise complete observations are used for each correlation.
+   e) Store the raw plot data and the correlation matrices in an Excel workbook.
+   f) Use the resulting Heatmap_Pearson and Heatmap_Spearman sheets to create the figure.
+
+4. Rows used in the analysis: 493
+
+5. Summary statistics
+                           variable   N      mean       std      min      q25    median       q75        max
+                                EFA 493 16.927601 15.356621 3.155138 6.906098 13.242751 20.369365 177.699982
+         lat_distortion_misfit_mean 493  0.150354  0.077074 0.015033 0.095857  0.144781  0.184993   0.516805
+        lat_distortion_misfit_stdev 493  0.079856  0.045452 0.000000 0.049346  0.073358  0.103136   0.272315
+ lat_distortion_relax_distance_mean 493  0.270538  0.148361 0.018032 0.167342  0.257594  0.340102   1.268701
+lat_distortion_relax_distance_stdev 493  0.145863  0.085620 0.000000 0.086355  0.131897  0.196650   0.591624
+               solubility_parameter 493  0.127425  0.129587 0.000718 0.038599  0.092719  0.164162   0.815139
+
+6. Pearson correlations
+descriptor_label  $\bar{\epsilon}$  $\sigma_{\epsilon}$  $\bar{d}$  $\sigma_d$  $\delta_s$
+target_label                                                                              
+EFA                      -0.414856            -0.169879  -0.374991   -0.193558   -0.368929
+
+7. Spearman correlations
+descriptor_label  $\bar{\epsilon}$  $\sigma_{\epsilon}$  $\bar{d}$  $\sigma_d$  $\delta_s$
+target_label                                                                              
+EFA                      -0.435724            -0.064262  -0.355336   -0.092148   -0.566554
+
+8. Interpretation
+   Negative EFA correlations mean that larger lattice distortion is associated with
+   lower entropy-forming ability. Because EFA can be skewed, the manuscript can
+   emphasize the Spearman heatmap in the main text,
+   while keeping Pearson as supporting information.
+
+9. Output files
+   Excel workbook: analysis/04_fig6d_distortion/output/efa_lattice_descriptor_correlations.xlsx
+   TXT report:     analysis/04_fig6d_distortion/output/efa_lattice_descriptor_correlation_report.txt

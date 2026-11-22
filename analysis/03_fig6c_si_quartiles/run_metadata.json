@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "analysis/00_runbook/legacy_gkf.py",
+    "analysis/03_fig6c_si_quartiles/code/01_analyze_efa_quartile_classes_with_originpro.py",
+    "--input",
+    "analysis/03_fig6c_si_quartiles/input/locked_493.xlsx",
+    "--outdir",
+    "analysis/03_fig6c_si_quartiles/output"
+  ],
+  "returncode": 0,
+  "input_sha256": "1ebcb80c4cb25da45d91fa898c5e85b36f81499ea4ed5b50c994629fde3f0a84",
+  "script_snapshots": [
+    {
+      "snapshot": "03_fig6c_si_quartiles/code/01_analyze_efa_quartile_classes_with_originpro.py",
+      "sha256": "94311fb0631d7993f209c4aa74e756df6ea5a5eb063539e8d073021799cd36c9"
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "working_directory": "analysis/03_fig6c_si_quartiles/code",
+  "rerun": [
+    "2026-10-05, solubility parameter replaced (00_runbook/update_solubility_parameter.py)",
+    "2026-10-07, rerun after the removal of fields the manuscript does not report (00_runbook/rerun_20261007.py)"
+  ],
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5"
+  },
+  "input_update": "2026-11-22, the column entropy_forming_ability of locked_493.xlsx, which no analysis reads, left empty; input_sha256 is the hash of that file, and the outputs are unchanged"
+}

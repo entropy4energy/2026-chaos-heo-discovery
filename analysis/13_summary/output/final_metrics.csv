@@ -1,0 +1,66 @@
+section,metric,value,unit,analysis_folder
+cohort,N_four_cation_systems,493.0,count,00_cohort_lock
+cohort,high_EFA_count,124.0,count,07_fig7b_classification
+Figure6a,S_CHAOS_EFA_percentile_Spearman_rho,0.4712143283380148,,01_fig6a_compatibility
+Figure6b,PC1_variance_percent,42.375460637202686,%,02_fig6b_pca
+Figure6b,PC2_variance_percent,14.12921556297376,%,02_fig6b_pca
+Figure6a,class_count_high-EFA + high descriptor compatibility,163.0,count,01_fig6a_compatibility
+Figure6a,class_count_high-EFA only,84.0,count,01_fig6a_compatibility
+Figure6a,class_count_high descriptor compatibility only,80.0,count,01_fig6a_compatibility
+Figure6a,class_count_other,166.0,count,01_fig6a_compatibility
+Figure7a,DFT only_n_features,5.0,count,06_fig7a_regression
+Figure7a,DFT only_R2,0.341770461896073,,06_fig7a_regression
+Figure7a,DFT only_Spearman_rho,0.6303328058204414,,06_fig7a_regression
+Figure7a,DFT only_RMSE,0.2569657153534186,,06_fig7a_regression
+Figure7a,DFT only_MAE,0.1957499830447901,,06_fig7a_regression
+Figure7a,Chemistry only_n_features,19.0,count,06_fig7a_regression
+Figure7a,Chemistry only_R2,0.5365830229021409,,06_fig7a_regression
+Figure7a,Chemistry only_Spearman_rho,0.7571594302059583,,06_fig7a_regression
+Figure7a,Chemistry only_RMSE,0.2156117722982264,,06_fig7a_regression
+Figure7a,Chemistry only_MAE,0.1701512227674128,,06_fig7a_regression
+Figure7a,Combined_n_features,30.0,count,06_fig7a_regression
+Figure7a,Combined_R2,0.5949416937028769,,06_fig7a_regression
+Figure7a,Combined_Spearman_rho,0.8059611493865635,,06_fig7a_regression
+Figure7a,Combined_RMSE,0.2015789926935114,,06_fig7a_regression
+Figure7a,Combined_MAE,0.1568025760975412,,06_fig7a_regression
+Figure7b,DFT only_ROC_AUC,0.8826601975697177,,07_fig7b_classification
+Figure7b,DFT only_Average_precision,0.7186862282485876,,07_fig7b_classification
+Figure7b,DFT only_Brier_score,0.1434982242487294,,07_fig7b_classification
+Figure7b,Chemistry only_ROC_AUC,0.8778302299152023,,07_fig7b_classification
+Figure7b,Chemistry only_Average_precision,0.7019549829727221,,07_fig7b_classification
+Figure7b,Chemistry only_Brier_score,0.1316999449134937,,07_fig7b_classification
+Figure7b,Combined_ROC_AUC,0.9219337354663869,,07_fig7b_classification
+Figure7b,Combined_Average_precision,0.7555527143786491,,07_fig7b_classification
+Figure7b,Combined_Brier_score,0.1043832831660997,,07_fig7b_classification
+Figure7c,DFT only_top10_top_n,50.0,,08_fig7c_enrichment
+Figure7c,DFT only_top10_true_high_EFA_hits,39.0,,08_fig7c_enrichment
+Figure7c,DFT only_top10_precision_in_top_k,0.78,,08_fig7c_enrichment
+Figure7c,DFT only_top10_enrichment_factor,3.101129032258064,,08_fig7c_enrichment
+Figure7c,Chemistry only_top10_top_n,50.0,,08_fig7c_enrichment
+Figure7c,Chemistry only_top10_true_high_EFA_hits,42.0,,08_fig7c_enrichment
+Figure7c,Chemistry only_top10_precision_in_top_k,0.84,,08_fig7c_enrichment
+Figure7c,Chemistry only_top10_enrichment_factor,3.339677419354838,,08_fig7c_enrichment
+Figure7c,Combined_top10_top_n,50.0,,08_fig7c_enrichment
+Figure7c,Combined_top10_true_high_EFA_hits,42.0,,08_fig7c_enrichment
+Figure7c,Combined_top10_precision_in_top_k,0.84,,08_fig7c_enrichment
+Figure7c,Combined_top10_enrichment_factor,3.339677419354838,,08_fig7c_enrichment
+Figure7d,predicted_priority_region_count,52.0,,09_fig7d_prioritization
+Figure7d,predicted_priority_region_precision_for_true_both,0.9230769230769231,,09_fig7d_prioritization
+Figure7d,predicted_priority_region_enrichment_for_true_both,9.287284144427002,,09_fig7d_prioritization
+Figure7d,true_high_EFA_and_high_compatibility_prevalence,0.09939148073022312,,09_fig7d_prioritization
+Figure6d,Spearman_EFA_epsilon_bar,-0.4357242132423295,,04_fig6d_distortion
+Figure6d,Spearman_EFA_sigma_epsilon,-0.06426213264515819,,04_fig6d_distortion
+Figure6d,Spearman_EFA_d_bar,-0.355336416155795,,04_fig6d_distortion
+Figure6d,Spearman_EFA_sigma_d,-0.09214764883235957,,04_fig6d_distortion
+Figure6d,Spearman_EFA_delta_s,-0.5665536529883861,,04_fig6d_distortion
+Figure6d,Spearman_EFA_VEC,0.3997034978735827,,05_fig6d_chemistry
+Figure6d,Spearman_EFA_delta_radii_Ghosh08,-0.3346911065172111,,05_fig6d_chemistry
+Figure6d,Spearman_EFA_param_geo_radii_Ghosh08,0.3346911065172111,,05_fig6d_chemistry
+sensitivity,combined_R2_min_seeds_0_to_19,0.5731387846913953,,11_model_robustness
+sensitivity,combined_R2_max_seeds_0_to_19,0.6126244970145975,,11_model_robustness
+sensitivity,combined_Spearman_rho_min_seeds_0_to_19,0.7973497234212719,,11_model_robustness
+sensitivity,combined_Spearman_rho_max_seeds_0_to_19,0.8162050878788675,,11_model_robustness
+sensitivity,combined_ROC_AUC_min_seeds_0_to_19,0.9158580295480372,,11_model_robustness
+sensitivity,combined_ROC_AUC_max_seeds_0_to_19,0.932074482035143,,11_model_robustness
+sensitivity,combined_top10_precision_min_seeds_0_to_19,0.84,,11_model_robustness
+sensitivity,combined_top10_precision_max_seeds_0_to_19,0.92,,11_model_robustness

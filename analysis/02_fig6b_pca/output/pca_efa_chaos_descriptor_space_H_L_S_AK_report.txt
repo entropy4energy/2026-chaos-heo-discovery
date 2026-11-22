@@ -1,0 +1,92 @@
+PCA of combined CHAOS descriptor space colored/evaluated by EFA
+==============================================================================
+
+1. Data source
+   Input workbook: analysis/02_fig6b_pca/input/locked_493.xlsx
+   Sheet: combined
+   Raw rows: 493
+   Rows used after dropping missing EFA: 493
+
+2. PCA input features
+   DFT descriptor block: H-L
+      - lat_distortion_misfit_mean -> $\bar{\epsilon}$
+      - lat_distortion_misfit_stdev -> $\sigma_{\epsilon}$
+      - lat_distortion_relax_distance_mean -> $\bar{d}$
+      - lat_distortion_relax_distance_stdev -> $\sigma_d$
+      - solubility_parameter -> $\delta_s$
+   Non-DFT chemistry descriptor block: S-AK
+      - VEC -> VEC
+      - delta_electronegativity_Allen -> $\delta\chi_{\mathrm{Allen}}$
+      - delta_electronegativity_Ghosh -> $\delta\chi_{\mathrm{Ghosh}}$
+      - delta_electronegativity_Pauling -> $\delta\chi_{\mathrm{Pauling}}$
+      - delta_electronegativity_Pearson -> $\delta\chi_{\mathrm{Pearson}}$
+      - delta_radii_Ghosh08 -> $\delta r_{\mathrm{Ghosh}}$
+      - delta_radii_Pyykko -> $\delta r_{\mathrm{Pyykk\ddot{o}}}$
+      - delta_radii_Slatter -> $\delta r_{\mathrm{Slater}}$
+      - delta_radius_PT -> $\delta r_{\mathrm{PT}}$
+      - delta_radius_Saxena -> $\delta r_{\mathrm{Saxena}}$
+      - delta_radius_covalent_PT -> $\delta r_{\mathrm{cov,PT}}$
+      - delta_radius_covalent -> $\delta r_{\mathrm{cov}}$
+      - param_geo_radii_Ghosh08 -> $\Lambda_{\mathrm{Ghosh}}$
+      - param_geo_radii_Pyykko -> $\Lambda_{\mathrm{Pyykk\ddot{o}}}$
+      - param_geo_radii_Slatter -> $\Lambda_{\mathrm{Slater}}$
+      - param_geo_radius_PT -> $\Lambda_{\mathrm{PT}}$
+      - param_geo_radius_Saxena -> $\Lambda_{\mathrm{Saxena}}$
+      - param_geo_radius_covalent_PT -> $\Lambda_{\mathrm{cov,PT}}$
+      - param_geo_radius_covalent -> $\Lambda_{\mathrm{cov}}$
+   Valid features used: 24
+   Dropped features: none
+
+3. Excluded variables
+   EFA was not used as a PCA input; it was used only for percentile coloring and post-PCA correlation.
+   Related target columns were not used.
+   Configurational entropy columns M-R were not used because the requested feature blocks are H-L and S-AK.
+
+4. Preprocessing
+   All selected features were converted to numeric values. Missing feature values were median-imputed.
+   Features were standardized to zero mean and unit variance before PCA.
+   PC2 was oriented to have a positive Spearman correlation with EFA percentile; PCA signs are arbitrary.
+
+5. Explained variance
+   PC1: explained variance ratio = 0.4238; cumulative = 0.4238
+   PC2: explained variance ratio = 0.1413; cumulative = 0.5650
+   PC3: explained variance ratio = 0.0792; cumulative = 0.6443
+   PC4: explained variance ratio = 0.0674; cumulative = 0.7116
+   PC5: explained variance ratio = 0.0500; cumulative = 0.7616
+
+6. PC-EFA correlations
+   PC1 vs EFA percentile: Pearson r = -0.107; Spearman rho = -0.112
+   PC2 vs EFA percentile: Pearson r = 0.367; Spearman rho = 0.396
+
+7. Top absolute loadings
+   PC1:
+      $\delta r_{\mathrm{cov,PT}}$ (delta_radius_covalent_PT; chemistry): loading = 0.2929
+      $\delta\chi_{\mathrm{Pearson}}$ (delta_electronegativity_Pearson; chemistry): loading = 0.2890
+      $\delta r_{\mathrm{Slater}}$ (delta_radii_Slatter; chemistry): loading = 0.2870
+      $\delta r_{\mathrm{PT}}$ (delta_radius_PT; chemistry): loading = 0.2816
+      $\delta r_{\mathrm{Pyykk\ddot{o}}}$ (delta_radii_Pyykko; chemistry): loading = 0.2809
+      $\delta\chi_{\mathrm{Allen}}$ (delta_electronegativity_Allen; chemistry): loading = 0.2730
+      $\delta\chi_{\mathrm{Pauling}}$ (delta_electronegativity_Pauling; chemistry): loading = 0.2726
+      $\delta r_{\mathrm{Ghosh}}$ (delta_radii_Ghosh08; chemistry): loading = 0.2683
+      $\delta r_{\mathrm{Saxena}}$ (delta_radius_Saxena; chemistry): loading = 0.2679
+      $\delta r_{\mathrm{cov}}$ (delta_radius_covalent; chemistry): loading = 0.2485
+   PC2:
+      $\bar{\epsilon}$ (lat_distortion_misfit_mean; DFT): loading = -0.4783
+      $\sigma_d$ (lat_distortion_relax_distance_stdev; DFT): loading = -0.4639
+      $\sigma_{\epsilon}$ (lat_distortion_misfit_stdev; DFT): loading = -0.4568
+      $\bar{d}$ (lat_distortion_relax_distance_mean; DFT): loading = -0.4505
+      $\delta_s$ (solubility_parameter; DFT): loading = -0.2268
+      $\delta\chi_{\mathrm{Ghosh}}$ (delta_electronegativity_Ghosh; chemistry): loading = -0.1660
+      $\Lambda_{\mathrm{Slater}}$ (param_geo_radii_Slatter; chemistry): loading = -0.1359
+      $\delta r_{\mathrm{Saxena}}$ (delta_radius_Saxena; chemistry): loading = 0.0943
+      $\Lambda_{\mathrm{Ghosh}}$ (param_geo_radii_Ghosh08; chemistry): loading = 0.0882
+      $\delta r_{\mathrm{Ghosh}}$ (delta_radii_Ghosh08; chemistry): loading = -0.0774
+
+8. Interpretation
+   The PC1-PC2 projection combines DFT lattice distortion and chemistry descriptors in one latent CHAOS descriptor space.
+   A systematic EFA gradient in this plane indicates that high-EFA systems are organized by the descriptor space, not by EFA target leakage.
+   The loading plots identify whether the EFA-sensitive latent direction is dominated by structural distortion metrics, chemistry-only metrics, or both.
+
+9. Output
+   Excel workbook: analysis/02_fig6b_pca/output/pca_efa_chaos_descriptor_space_H_L_S_AK_analysis.xlsx
+   TXT report: analysis/02_fig6b_pca/output/pca_efa_chaos_descriptor_space_H_L_S_AK_report.txt

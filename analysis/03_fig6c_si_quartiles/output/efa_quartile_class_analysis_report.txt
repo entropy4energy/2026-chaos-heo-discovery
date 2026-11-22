@@ -1,0 +1,44 @@
+EFA quartile-class analysis: calculation report
+========================================================================
+
+1. Data source
+   Input workbook: analysis/03_fig6c_si_quartiles/input/locked_493.xlsx
+   Sheet: combined
+   Raw rows in sheet: 493
+   Rows used after dropping missing/non-numeric EFA: 493
+
+2. Quartile definitions
+   EFA quartile: Q1 = low EFA, Q2 = intermediate-low EFA, Q3 = intermediate-high EFA, Q4 = high EFA.
+   Quartiles are assigned using percentile ranks scaled to [0, 1].
+
+3. Descriptors compared across EFA quartiles
+   lat_distortion_misfit_mean -> $\bar{\epsilon}$
+   lat_distortion_relax_distance_mean -> $\bar{d}$
+   VEC -> VEC
+   delta_radii_Ghosh08 -> $\delta r_{\mathrm{Ghosh}}$
+   param_geo_radii_Ghosh08 -> $\Lambda_{\mathrm{Ghosh}}$
+   delta_electronegativity_Ghosh -> $\delta\chi_{\mathrm{Ghosh}}$
+
+4. Key EFA-quartile trends: raw means from Q1 to Q4
+   $\bar{\epsilon}$: Q1 mean = 0.186567; Q4 mean = 0.0968177; Spearman trend vs quartile = -0.424
+   $\bar{d}$: Q1 mean = 0.325454; Q4 mean = 0.176789; Spearman trend vs quartile = -0.348
+   VEC: Q1 mean = 5.82724; Q4 mean = 6.73286; Spearman trend vs quartile = 0.398
+   $\delta r_{\mathrm{Ghosh}}$: Q1 mean = 18.5342; Q4 mean = 12.2221; Spearman trend vs quartile = -0.325
+   $\Lambda_{\mathrm{Ghosh}}$: Q1 mean = 0.00525179; Q4 mean = 0.0220931; Spearman trend vs quartile = 0.325
+   $\delta\chi_{\mathrm{Ghosh}}$: Q1 mean = 0.49848; Q4 mean = 0.366724; Spearman trend vs quartile = -0.210
+
+5. Statistical tests
+   For each descriptor, the Excel workbook reports Spearman correlation against quartile index,
+   Kruskal-Wallis tests across Q1-Q4, and Mann-Whitney U tests comparing Q1 and Q4.
+   These tests are intended as trend diagnostics; the manuscript figure should emphasize
+   percentile-ranked distributions to avoid exposing system-specific raw values.
+
+6. Output files
+   Main Excel workbook: analysis/03_fig6c_si_quartiles/output/efa_quartile_class_analysis.xlsx
+   OriginPro subplot Excel workbook: analysis/03_fig6c_si_quartiles/output/efa_quartile_class_originpro_subplots.xlsx
+   TXT report: analysis/03_fig6c_si_quartiles/output/efa_quartile_class_analysis_report.txt
+
+7. Suggested manuscript interpretation
+   High-EFA quartiles show lower lattice-distortion metrics, lower Ghosh radius mismatch,
+   and higher Λ_Ghosh/VEC compared with low-EFA quartiles. These class-based distributions
+   provide a ranking while hiding individual EFA values.

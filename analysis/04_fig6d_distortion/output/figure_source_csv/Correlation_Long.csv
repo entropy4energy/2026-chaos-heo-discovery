@@ -1,0 +1,11 @@
+target_column,target_label,descriptor_column,descriptor_label,method,N,coefficient,p_value
+EFA,EFA,lat_distortion_misfit_mean,$\bar{\epsilon}$,Pearson,493,-0.414856214816933,6.265851625766345e-22
+EFA,EFA,lat_distortion_misfit_mean,$\bar{\epsilon}$,Spearman,493,-0.4357242132423295,2.919874074212929e-24
+EFA,EFA,lat_distortion_misfit_stdev,$\sigma_{\epsilon}$,Pearson,493,-0.169878931235393,0.0001506889891394545
+EFA,EFA,lat_distortion_misfit_stdev,$\sigma_{\epsilon}$,Spearman,493,-0.06426213264515819,0.1542434208309757
+EFA,EFA,lat_distortion_relax_distance_mean,$\bar{d}$,Pearson,493,-0.3749907678712683,6.601556587129026e-18
+EFA,EFA,lat_distortion_relax_distance_mean,$\bar{d}$,Spearman,493,-0.355336416155795,4.059685765022171e-16
+EFA,EFA,lat_distortion_relax_distance_stdev,$\sigma_d$,Pearson,493,-0.1935582996332485,1.506225279678091e-05
+EFA,EFA,lat_distortion_relax_distance_stdev,$\sigma_d$,Spearman,493,-0.09214764883235957,0.04083818521428195
+EFA,EFA,solubility_parameter,$\delta_s$,Pearson,493,-0.3689286559789007,2.42418180660163e-17
+EFA,EFA,solubility_parameter,$\delta_s$,Spearman,493,-0.5665536529883861,3.371207736299702e-43

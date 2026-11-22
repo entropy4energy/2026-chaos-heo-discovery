@@ -1,0 +1,28 @@
+Panel (a): Out-of-fold predicted vs observed log10(EFA)
+========================================================================
+Input workbook: analysis/06_fig7a_regression/input/locked_493.xlsx
+Sheet: combined
+Rows used: 493
+Cross-validation: 5-fold, grouped by cation family when repeated families are present
+Model: median imputation + standard scaling + RidgeCV
+Target: log10(EFA)
+
+Feature groups:
+  DFT only: 5 features
+  Chemistry only: 19 features
+  Combined: 30 features
+
+Cross-validated out-of-fold metrics:
+ feature_group  n_features   N       R2     RMSE      MAE  Pearson_r    Pearson_p  Spearman_rho    Spearman_p
+      DFT only           5 493 0.341770 0.256966 0.195750   0.584957 1.359789e-46      0.630333  5.843654e-56
+Chemistry only          19 493 0.536583 0.215612 0.170151   0.734465 1.062633e-84      0.757159  7.479016e-93
+      Combined          30 493 0.594942 0.201579 0.156803   0.773654 2.297033e-99      0.805961 7.046564e-114
+
+Interpretation:
+  This panel tests whether CHAOS descriptors can predict the EFA ranking rather than merely correlate post hoc.
+  Points close to the y=x line indicate accurate out-of-fold prediction. Chemistry-only and combined
+  descriptor sets provide direct visual evidence that EFA is encoded in the descriptor space.
+
+Excel output: analysis/06_fig7a_regression/output/panel_a_predicted_vs_observed_logEFA_data.xlsx
+Figure PNG:   analysis/06_fig7a_regression/output/panel_a_predicted_vs_observed_logEFA.png
+Figure PDF:   analysis/06_fig7a_regression/output/panel_a_predicted_vs_observed_logEFA.pdf

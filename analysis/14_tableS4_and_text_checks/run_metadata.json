@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "analysis/00_runbook/run_tableS4_and_text_checks.py"
+  ],
+  "returncode": 0,
+  "input_sha256": "1ebcb80c4cb25da45d91fa898c5e85b36f81499ea4ed5b50c994629fde3f0a84",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5"
+  },
+  "reported_models_reproduced": "DFT only, Chemistry only and Combined match 13_summary/output/final_metrics.csv to 1e-9",
+  "input_update": "2026-11-22, the column entropy_forming_ability of locked_493.xlsx, which no analysis reads, left empty; input_sha256 is the hash of that file, and the outputs are unchanged"
+}

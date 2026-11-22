@@ -1,0 +1,34 @@
+{
+  "command": [
+    "python3",
+    "analysis/00_runbook/legacy_gkf.py",
+    "analysis/04_fig6d_distortion/code/01_analyze_efa_lattice_distortion_correlations.py",
+    "--input",
+    "analysis/04_fig6d_distortion/input/locked_493.xlsx",
+    "--outdir",
+    "analysis/04_fig6d_distortion/output"
+  ],
+  "returncode": 0,
+  "input_sha256": "1ebcb80c4cb25da45d91fa898c5e85b36f81499ea4ed5b50c994629fde3f0a84",
+  "script_snapshots": [
+    {
+      "snapshot": "04_fig6d_distortion/code/01_analyze_efa_lattice_distortion_correlations.py",
+      "sha256": "d600d546ebac57ae7d98b6c29c4de5ce8460be9e30710255f4c1486ef9da7205"
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "working_directory": "analysis/04_fig6d_distortion/code",
+  "rerun": [
+    "2026-10-05, solubility parameter replaced (00_runbook/update_solubility_parameter.py)",
+    "2026-10-07, rerun after the removal of fields the manuscript does not report (00_runbook/rerun_20261007.py)"
+  ],
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5"
+  },
+  "input_update": "2026-11-22, the column entropy_forming_ability of locked_493.xlsx, which no analysis reads, left empty; input_sha256 is the hash of that file, and the outputs are unchanged"
+}
